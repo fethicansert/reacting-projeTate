@@ -1,13 +1,107 @@
-body {
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Slab:wght@400;500;600&display=swap');
+:root{
+  --myBlack : #18181D;
+  --myDarkBlack : #110F12;
+  --myWhite : rgb(201, 201, 201);
+  --myBlue : #4882D6;
+}
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.app{
+  background: var(--myBlack) ;
+  width: fit-content;
+  margin:  0 auto;
+  width: 280px;
+}
+
+.user-info{
+  padding: .5rem .5rem 1.5rem .5rem;
+}
+
+span{
+  display: block;
+  text-align: center;
+  margin-bottom: 0rem;
+  font-family: 'Roboto Slab', serif;
+
+}
+
+.user-name{
+  color: white;
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.user-job{
+  color: #fca960a2;
+  font-size: .88rem;
+}
+
+.user-site{
+  color: var(--myWhite);
+  font-size: .8rem;
+  margin: .4rem 0 .7rem -0;
+}
+
+.user-buttons{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+
+button{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding: .3rem 0rem;
+  width: 100px;
+  border-radius: 4px;
+  border: none;
+  color: var(--myBlack);
+  background: white;
+  cursor: pointer;
+}
+
+.mail-button i{
+  margin-right: 3px;
+}
+
+.linekin-button{
+  background: var(--myBlue);
+  color: white;
+}
+
+.linekin-button i{
+  color: var(--myBlue);
+}
+
+.linkedin-box{
+  display: inline-block;
+  background: white;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3px;
+  width: 14px;
+  height: 17px;
+  border-radius: 3px;
 }
