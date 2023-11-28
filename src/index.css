@@ -3,7 +3,7 @@
 :root{
   --myBlack : #18181D;
   --myDarkBlack : #110F12;
-  --myWhite : rgb(201, 201, 201);
+  --myWhite : rgba(196, 196, 196, 0.837);
   --myBlue : #4882D6;
 }
 
@@ -17,6 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Poppins', sans-serif;
+  padding: 50px 0;
 }
 
 code {
@@ -104,4 +105,44 @@ button{
   width: 14px;
   height: 17px;
   border-radius: 3px;
+}
+
+.user-about-container{
+  padding: 0rem .1rem 2rem 1rem;
+  color: var(--myWhite);
+  font-size: .8rem;
+}
+
+.user-about-container h2{
+  color: rgba(255, 255, 255, 0.898);
+  font-size: 1.2rem;
+}
+
+.intereset-container h2{
+  margin-top: .8rem;
+}
+
+.user-social-container{
+  background: var(--myDarkBlack);
+  padding: .8rem 3.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-social-container i{
+  color: var(--myWhite);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.user-social-container,
+.app{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.app,
+.user-image{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
